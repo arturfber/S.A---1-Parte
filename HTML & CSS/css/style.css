@@ -1,0 +1,140 @@
+
+/* ================  HEADER  ================= */
+.cabecalho{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    border-bottom: 2px solid #3A98D5;
+}
+
+.cabecalho img{ 
+    float: left;
+}
+
+.cabecalho ul{
+    margin: 25px 20px 0 0;
+    float: right;
+    width: 40%;
+}
+
+.cabecalho li{
+    display: inline;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #3A98D5;
+}
+
+.cabecalho div{
+    float: right;
+    margin: 20px 40px 0 0;
+    color: #3A98D5;
+    border: 2px solid #3A98D5;
+    border-radius: 20px;
+    padding: 0.50%;
+}
+
+.cabecalho input{
+    width: 130px;
+    border: none;
+    transition: width 0.4s;
+}
+
+.cabecalho input:focus{
+    width: 200px;
+}
+
+.cabecalho i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+::placeholder{
+    color: #3A98D5;
+    opacity: 1;
+}
+
+/* ==============  MAIN  ================== */
+
+.carrossel{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url(../img/carrossel.jpg);
+    background-size: cover;
+    border-bottom: 2px solid #3A98D5;   
+}
+
+.sobre{
+    float: left;
+    width: 100%;
+}
+
+.sobre h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.sobre p {
+    margin: 2% 0 2% 0;
+    text-align: center;
+}
+
+.sobre h3 {
+    margin: 2% 5% 2% 5%;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.rodape{
+    width: 100%;
+    height: 140px;
+    float: left;
+    background-color: #3A98D5;
+}
+
+
+.rodape table {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.rodape i{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* ==============  PRODUTOS.HTML  ============== */
+
+.fotos{
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+}
+
+main h1{
+    text-align: center;
+    margin: 2%;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main p{
+    
+    font-size: 20px;
+    font-weight: 500;
+}
