@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Automotive | Cadastro </title>
+
+    <link rel="icon" href="https://image.freepik.com/vetores-gratis/logotipo-automotivo_25327-54.jpg">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/b58eb834a8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css_forms.css">
+
+</head>
+<body>
+    <header id="header">
+
+        <a href="#header"><button class="fixo"> <i class="fas fa-arrow-up"></i> </button></a>
+
+        <nav>
+
+            <a href="index.html"><img src="https://image.freepik.com/vetores-gratis/logotipo-automotivo_25327-54.jpg" alt="Logo" height="100"></a>
+
+            <ul> 
+                <li> <a href="index.html"> <i class="fas fa-home"></i> Home </a> </li>
+                <li> <a href="index.html#principal"> <i class="fas fa-car"></i> Carros </a> </li>
+                <li> <a href="quem_somos.html#sobrenos"> <i class="fas fa-address-card"></i> Quem somos </a> </li>
+                <li> <a href="fale_conosco.html#faleConosco"> <i class="far fa-paper-plane"></i> Contato </a> </li>
+                <li> <a href="cadastro.html#cadastro"> <i class="fas fa-plus"></i> Cadastrar </a> </li>
+                <li> <a href="login.html#login"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- ====================  CADASTRO  ==================== -->
+    <article class="cadastro" id="cadastro">
+
+        <form action="formulario.php" method="POST" name="formularioContato">
+            <fieldset>
+                <legend> Cadastro </legend>
+
+                <table>
+                    <!-- ==========  NOME  ========== -->
+                    <tr><td> <label for="nome"> Nome </label> </td></tr>
+                    <tr><td> <input type="text" name="nome" id="nome"> </td></tr>
+
+                    <!-- ==========  E-MAIL  ========== -->
+                    <tr><td> <label for="email"> E-mail </label> </td></tr>
+                    <tr><td> <input type="email" name="email" id="email"> </td></tr>
+
+                    <!-- ==========  SENHA  ========== -->
+                    <tr><td> <label for="senha"> Senha </label> </td></tr>
+                    <tr><td> <input type="password" name="senha" id="senha"> </td></tr>
+
+                    <!-- ==========  SEXO  ========== -->
+                    <tr><td> <label for="sexo"> Sexo </label> </td></tr>
+                    <tr><td> <select name="sexo" id="sexo">
+                        <option value=""> - Selecione - </option>
+                        <option value="masc"> Masculino </option>
+                        <option value="fem"> Feminino </option>
+                        <option value="outro"> Outro </option>
+
+                    </select> </td></tr>
+
+                    <!-- ==========  PLANO  ========== -->
+                    <tr><td> <label for=""> Plano </label> </td></tr>
+
+                    <tr>
+                        <td> <input type="radio" name="plano" id="standard"> <label for="standard"> Standard </label> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="radio" name="plano" id="basic"> <label for="basic"> Silver </label> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="radio" name="plano" id="gold"> <label for="gold"> Gold </label> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="radio" name="plano" id="diamond"> <label for="diamond"> Diamond </label> </td>
+                    </tr>
+                    
+                    </tr>
+
+                     <!-- ==========  ENVIAR E-MAILS  ========== -->
+                     <tr>
+                         <td>
+                            <input type="checkbox" name="novidade" id="novidade"> <label for="novidade"> Enviar-me notificações sobre novos produtos, promoções e novidades. </label> 
+                         </td> 
+                     </tr>
+                     
+
+                    <!-- ==========  TERMOS  ========== -->
+                    <tr><td> <label for=""> Ao clicar em cadastrar você concorda com os nossos <a href=""> Termos e condições. </a> </label> </td></tr>
+
+                    <tr><td> <button type="submit"> CADASTRAR </button> </td></tr>
+
+
+
+                </table>
+            </fieldset>
+           
+        </form>
+    </article>
+
+    <!-- =====================================  RODAPÉ  ===================================== -->
+    <footer class="rodape">
+        <h1> Automotive&reg; - 2020 / 2020 - Todos os direitos reservados </h1>
+    </footer>
+
+</body>
+
+
+</html>

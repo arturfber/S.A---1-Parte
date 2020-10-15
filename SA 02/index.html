@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Automotive | Home </title>
+
+    <link rel="icon" href="https://image.freepik.com/vetores-gratis/logotipo-automotivo_25327-54.jpg">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/b58eb834a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+
+        <a href="#header"><button class="fixo"> <i class="fas fa-arrow-up"></i> </button></a>
+
+        <nav>
+
+            <a href="index.html"><img src="https://image.freepik.com/vetores-gratis/logotipo-automotivo_25327-54.jpg" alt="Logo" height="100"></a>  
+
+            <ul> 
+                <li> <a href="index.html"> <i class="fas fa-home"></i> Home </a> </li>
+                <li> <a href="#principal"> <i class="fas fa-car"></i> Carros </a> </li>
+                <li> <a href="quem_somos.html#sobrenos"> <i class="fas fa-address-card"></i> Quem somos </a> </li>
+                <li> <a href="fale_conosco.html#faleConosco"> <i class="far fa-paper-plane"></i> Contato </a> </li>
+                <li> <a href="cadastro.html#cadastro"> <i class="fas fa-plus"></i> Cadastrar </a> </li>
+                <li> <a href="login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- =====================================  CARROSSEL  ===================================== -->
+
+    <article class="carroussel">
+
+        <div class="wellcome">
+            <h1 class="gradient"> Automotive </h1>
+        </div>
+
+    </article>
+
+
+      <!-- =====================================  PRINCIPAL  ===================================== -->
+    <main class="principal" id="principal">
+
+        <h1> Destaques </h1>
+
+        <!-- ====================  CAMARO  ==================== -->
+        <div class="carro camaro">
+            <button  id="ofuscarCamaro" onclick="mostrar('h1Camaro', 'tableCamaro', 'ofuscarCamaro')"></button>
+
+            <h1 id="h1Camaro" onclick="mostrar('h1Camaro', 'tableCamaro', 'ofuscarCamaro')"> Chevrolet Camaro SS 6.2 V8 16V </h1>
+
+            <table onclick="mostrar('h1Camaro', 'tableCamaro', 'ofuscarCamaro')" cellspacing="5" id="tableCamaro">
+                <tr>
+                    <td> Porte:</td>
+                    <td> Grande</td>
+                </tr>
+
+                <tr>
+                    <td> Portas: </td>
+                    <td> 2 </td>
+                </tr>
+
+                <tr>
+                    <td> Ocupantes: </td>
+                    <td>  4 </td>
+                </tr>
+
+                <tr>
+                    <td> Aspiração: </td>
+                    <td> Natural </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindros: </td>
+                    <td> 8 em V </td>
+                </tr>
+
+                <tr>
+                    <td> Válvulas por cilindro: </td>
+                    <td> 2 </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindrada: </td>
+                    <td> 6162cm³ </td>
+                </tr>
+
+                <tr>
+                    <td> Potência: </td>
+                    <td> 406/kgfm </td>
+                </tr>
+
+                <tr>
+                    <td> Combustível: </td>
+                    <td> Gasolina </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- ====================  SUPRA  ==================== -->
+        <div class="carro supra">
+            <button  id="ofuscarSupra" onclick="mostrar('h1Supra', 'tableSupra', 'ofuscarSupra')"></button>
+
+            <h1 id="h1Supra" onclick="mostrar('h1Supra', 'tableSupra', 'ofuscarSupra')"> Toyota Supra 3.0 biturbo </h1>
+
+            <table onclick="mostrar('h1Supra', 'tableSupra', 'ofuscarSupra')" cellspacing="5" id="tableSupra">
+                <tr>
+                    <td> Porte:</td>
+                    <td> Grande</td>
+                </tr>
+
+                <tr>
+                    <td> Portas: </td>
+                    <td> 2 </td>
+                </tr>
+
+                <tr>
+                    <td> Ocupantes: </td>
+                    <td>  4 </td>
+                </tr>
+
+                <tr>
+                    <td> Aspiração: </td>
+                    <td> Turbocompressor </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindros: </td>
+                    <td> 6 em linha </td>
+                </tr>
+
+                <tr>
+                    <td> Válvulas por cilindro: </td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindrada: </td>
+                    <td> 2997cm³ </td>
+                </tr>
+
+                <tr>
+                    <td> Potência: </td>
+                    <td> 4,8kg/kgfm </td>
+                </tr>
+
+                <tr>
+                    <td> Combustível: </td>
+                    <td> Gasolina </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- ====================  GTR  ==================== -->
+        <div class="carro gtr">
+            <button  id="ofuscarGTR" onclick="mostrar('h1GTR', 'tableGTR', 'ofuscarGTR')"></button>
+
+            <h1 id="h1GTR" onclick="mostrar('h1GTR', 'tableGTR', 'ofuscarGTR')"> Nissan GT-R  3.8 V6 biturbo </h1>
+
+            <table onclick="mostrar('h1GTR', 'tableGTR', 'ofuscarGTR')" cellspacing="5" id="tableGTR">
+                <tr>
+                    <td> Porte:</td>
+                    <td> Grande</td>
+                </tr>
+
+                <tr>
+                    <td> Portas: </td>
+                    <td> 2 </td>
+                </tr>
+
+                <tr>
+                    <td> Ocupantes: </td>
+                    <td>  4 </td>
+                </tr>
+
+                <tr>
+                    <td> Aspiração: </td>
+                    <td> Turbocompressor </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindros: </td>
+                    <td> 6 em V </td>
+                </tr>
+
+                <tr>
+                    <td> Válvulas por cilindro: </td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindrada: </td>
+                    <td> 3799cm³ </td>
+                </tr>
+
+                <tr>
+                    <td> Potência: </td>
+                    <td> 3,1kg/kgfm </td>
+                </tr>
+
+                <tr>
+                    <td> Combustível: </td>
+                    <td> Gasolina </td>
+                </tr>
+            </table>
+        </div>
+
+          <!-- ====================  NISSAN 350Z  ==================== -->
+          <div class="carro z350">
+            <button  id="ofuscarZ350" onclick="mostrar('h1Z350', 'tableZ350', 'ofuscarZ350')"></button>
+
+            <h1 id="h1Z350" onclick="mostrar('h1Z350', 'tableZ350', 'ofuscarZ350')"> Nissan 350Z 3.5 V </h1>
+
+            <table onclick="mostrar('h1Z350', 'tableZ350', 'ofuscarZ350')" cellspacing="5" id="tableZ350">
+                <tr>
+                    <td> Porte: </td>
+                    <td> Médio </td>
+                </tr>
+
+                <tr>
+                    <td> Portas: </td>
+                    <td> 2 </td>
+                </tr>
+
+                <tr>
+                    <td> Ocupantes: </td>
+                    <td>  2 </td>
+                </tr>
+
+                <tr>
+                    <td> Aspiração: </td>
+                    <td> Natural </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindros: </td>
+                    <td> 6 em V </td>
+                </tr>
+
+                <tr>
+                    <td> Válvulas por cilindro: </td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td> Cilindrada: </td>
+                    <td> 3498cm³ </td>
+                </tr>
+
+                <tr>
+                    <td> Potência: </td>
+                    <td> 5,2kg/kgfm </td>
+                </tr>
+
+                <tr>
+                    <td> Combustível: </td>
+                    <td> Gasolina </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- =====================================  RODAPÉ  ===================================== -->
+    <footer class="rodape">
+        <h1> Automotive&reg; - 2020 / 2020 - Todos os direitos reservados </h1>
+    </footer>
+
+</body>
+
+<script>
+
+    let cont = 0;
+
+    let tabela;
+
+    function mostrar(id1, id2, id3){
+
+    
+        switch(cont){
+        
+            case 0:
+                
+                // CONFIGURAÇÃO H1
+                document.getElementById(id1).style.color = 'rgb(255, 255, 255)'
+                document.getElementById(id1).style.zIndex = '1'
+
+                // CONFIGURAÇÃO TABLE
+                tabela = document.getElementById(id2).style.opacity = '1'
+                document.getElementById(id2).style.color = 'rgb(255, 255, 255)'
+                document.getElementById(id2).style.zIndex = '1'
+
+                // CONFIGURAÇÃO OFUSCAR
+                document.getElementById(id3).style.backgroundColor='rgba(00, 00, 00, 0.8)'
+                document.getElementById(id2).style.zIndex = '1'
+
+
+                cont = 1
+                break;
+
+            case 1:
+
+                // CONFIGURAÇÃO H1
+                document.getElementById(id1).style.color = '#000'
+                document.getElementById(id1).style.zIndex = '1'
+
+                // CONFIGURAÇÃO TABLE
+                tabela = document.getElementById(id2).style.opacity = '0'
+
+                // CONFIGURAÇÃO OFUSCAR
+                document.getElementById(id3).style.backgroundColor='transparent'
+                document.getElementById(id2).style.zIndex = '1'
+     
+                cont = 0
+            break;
+
+            default:
+                alert("Algo deu errado!");
+
+        }         
+    }          
+</script>
+
+</html>
