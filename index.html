@@ -17,38 +17,46 @@
     <header class="cabecalho">
         <nav>
 
-            <img src="Logo.PNG" alt="Logo">
+            <a href="#"><img class="logo" src="Logo.PNG" alt="Logo"></a>
 
             <ul>
                 <li> <a href="#"> Home </a> </li>
-                <li> <a href="#"> Produtos </a> </li>
-                <li> <a href="#"> Quem somos </a> </li>
-                <li> <a href="#"> Contato </a> </li>
+                <li> <a href="#principal"> Produtos </a> </li>
+                <li> <a href="#contato"> Contato </a> </li>
+                <li> <a href="#quemSomos"> Quem somos </a> </li>
                 <li> <a href="#"> <i class="fas fa-search"></i> </a> </li>
             </ul>
         </nav>
     </header>
-
+    
     <article class="carrossel">
 
-        <section class="boloAmendoim">
+        <section class="banner">
+
+            <div class="setas">
+                <i onclick="carrossel(1)" id="dot1" class="fas fa-circle"></i>
+
+                <i onclick="carrossel(2)" id="dot2" class="fas fa-circle"></i>
+
+                <i onclick="carrossel(3)" id="dot3" class="fas fa-circle"></i>
+            </div>
 
             <div class="escrita">
-                <p class="first"> Bolo de chocolate com</p>
+                <p class="first" id="first"> Bolo de chocolate com</p>
 
-                <p class="second"> Amendoim </p>
+                <p class="second" id="second"> Amendoim </p>
 
-                <p class="third"> &#160&#160&#160&#160&#160 Delicioso bolo crocante de amendoim recheado com creme especial e chocolate ao leite. </p>
+                <p class="third" id="third"> &#160&#160&#160&#160&#160 Delicioso bolo crocante de amendoim recheado com creme especial e chocolate ao leite. </p>
 
-                <button class="four" > Conferir </button>
+                <a href="#amendoim" id="botaoScroll"><button class="four" > Conferir </button></a>
             </div>
-            <img class="boloAmendoimIMG" src="https://dinorma.com.br/wp-content/uploads/2020/02/pave-crocante-slider.png" alt="Bolo de Amendoim">
+            <img class="boloIMG" id="bolo" src="https://dinorma.com.br/wp-content/uploads/2020/02/pave-crocante-slider.png" alt="Bolo">
         </section>
 
     </article>
 
     <!--====================  M A I N  ====================-->
-    <main class="principal">
+    <main class="principal" id="principal">
 
         <h1> BOLOS CASEIROS </h1>
         
@@ -65,7 +73,7 @@
                 <button> ADICIONAR </button>
             </div>
 
-            <div class="bolo2 bolo">
+            <div id="chantilly" class="bolo2 bolo">
                 
                 <img src="https://maginy-festas.webnode.com/_files/200000066-2e2a52f267/Torta-abacaxi.png" alt="">
 
@@ -80,7 +88,7 @@
                 
                 <img src="https://cozinhadobolo.com.br/wp-content/uploads/2019/07/bolo_tentacao.png" alt="">
 
-                <p> Bolo festa com dupla camada de recheio </p>
+                <p> Bolo festa com chantilly e dupla camada de recheio </p>
 
                 <p> R$59,90 </p>
 
@@ -98,18 +106,18 @@
                 <button> ADICIONAR </button>
             </div>
 
-            <div class="bolo5 bolo">
+            <div id="maracuja" class="bolo5 bolo">
                 
                 <img src="https://bocadoforno.com.br/wp-content/uploads/torta-maracuja-chocolate.png" alt="">
 
-                <p> Bolo de cremos de maracujá com chocolate </p>
+                <p> Bolo cremoso de maracujá com chocolate </p>
 
                 <p> R$49,90 </p>
 
                 <button> ADICIONAR </button>
             </div>
 
-            <div class="bolo6 bolo">
+            <div id="amendoim" class="bolo6 bolo">
                 
                 <img src="https://dinorma.com.br/wp-content/uploads/2020/02/pave-crocante-slider.png" alt="">
 
@@ -124,7 +132,7 @@
     </main>
 
     <!--====================  C O N T A T O  ====================-->
-    <section class="contato">
+    <section class="contato" id="contato">
         
         <h1> CONTATO </h1>
 
@@ -146,7 +154,7 @@
     </section>
 
     <!--====================  QUEM SOMOS ====================-->
-    <section class="quemSomos">
+    <section class="quemSomos" id="quemSomos">
         
         <div class="content"> 
             <h1> QUEM SOMOS </h1>
@@ -162,4 +170,67 @@
         <h1> Flavoro® - Todos os direitos reservados </h1>
     </section>
 </body>
+
+<script>
+         
+
+    function carrossel(cont){
+        switch (cont){
+
+            case 1:
+                document.getElementById('bolo').src = 'https:/dinorma.com.br/wp-content/uploads/2020/02/pave-crocante-slider.png'
+
+                document.getElementById('first').innerHTML = 'Bolo de chocolate com'
+                document.getElementById('first').style.color = '#F3660D'
+                document.getElementById('second').innerHTML = 'Amendoim'
+                document.getElementById('second').style.color = '#F3660D'
+                document.getElementById('third').innerHTML = '&#160&#160&#160&#160&#160 Delicioso bolo crocante de amendoim recheado com creme especial e chocolate ao leite.'
+                
+
+                document.getElementById('botaoScroll').href = '#amendoim'
+
+                document.getElementById('dot1').style.color = ' rgb(255, 255, 255)'
+                document.getElementById('dot2').style.color = 'rgb(243, 102, 13)'
+                document.getElementById('dot3').style.color = 'rgb(243, 102, 13)'
+            break;
+
+            case 2:
+                document.getElementById('bolo').src = 'https:/maginy-festas.webnode.com/_files/200000066-2e2a52f267/Torta-abacaxi.png'
+
+                document.getElementById('first').innerHTML = 'Bolo festa com'
+                document.getElementById('first').style.color = '#ca8318'
+                document.getElementById('second').innerHTML = 'Chantilly'
+                document.getElementById('second').style.color = '#ca8318'
+                document.getElementById('third').innerHTML = '&#160&#160&#160&#160&#160 Bolo cremoso de abacaxi com recheio de chocolate ao leite e cobertura de chantilly.'; 
+
+                
+                
+                document.getElementById('botaoScroll').href = '#chantilly'
+
+                document.getElementById('dot1').style.color = ' rgb(243, 102, 13)'
+                document.getElementById('dot2').style.color = 'rgb(255, 255, 255)'
+                document.getElementById('dot3').style.color = 'rgb(243, 102, 13)'
+            break;
+
+            case 3:
+                document.getElementById('bolo').src = 'https:/bocadoforno.com.br/wp-content/uploads/torta-maracuja-chocolate.png'
+
+                document.getElementById('first').innerHTML = 'Bolo maracujá  com'
+                document.getElementById('first').style.color = '#663427'
+                document.getElementById('second').innerHTML = 'Chocolate'
+                document.getElementById('second').style.color = '#663427'
+                document.getElementById('third').innerHTML = '&#160&#160&#160&#160&#160 Bolo de maracujá com recheio de chocolate, creme especial e lascas de chocolate ao leite.'; 
+                
+                document.getElementById('botaoScroll').href = '#maracuja'
+
+                document.getElementById('dot1').style.color = ' rgb(243, 102, 13)'
+                document.getElementById('dot2').style.color = 'rgb(243, 102, 13)'
+                document.getElementById('dot3').style.color = 'rgb(255, 255, 255)'
+            break;
+        }
+        
+    }
+
+</script>
+
 </html>
